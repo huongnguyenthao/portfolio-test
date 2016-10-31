@@ -2,22 +2,31 @@
 <html>
 <head>
 	<title>Title of the document</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<p>test para</p>
-	<li>some list</li>
-	<div class="containing_div vertical">
-	<img class ="main_image" src="images/image2.jpg" alt="background image" />
-	<a href="about.html"><img class ="part_image shadowed" src="images/logo1.png" alt="interactive image" /></a>
-	<figure class="navlink drawings"><a href="about.html">Drawings</a></figure>
-	<figure class="navlink comics"><a href="about.html">Comics</a></figure>
-	<figure class="navlink paintings"><a href="about.html">Paintings</a></figure>
-	<figure class="navlink about"><a href="about.html">About</a></figure>
-	<div class="next">This is where the next block is</div>
-	</div>
+	<div class="container">
+		<header id="header" class="row header_or_footer"></header>
+		<div id="containing_div" class="row">
+			<img class = "main_image mobile" src="images/background_image_vertical_editted.jpg" alt="background image" />
+			<img class = "main_image tablet" src="images/background_image_tablet.jpg" alt="background image" />
+
+			<div class="navlink" id="code"><a href="about.html">Code</a></div>
+			<div class="navlink" id="interactive"><a href="about.html">Interactive</a></div>
+			<div class="navlink" id="drawings"><a href="about.html">Drawings</a></div>
+			<div class="navlink" id="comics"><a href="about.html">Comics</a></div>
+			<div class="navlink" id="paintings"><a href="about.html">Paintings</a></div>
+			<div class="navlink" id="about"><a href="about.html">ABOUT ME</a></div>
+		</div>
+		<footer id="footer" class="row header_or_footer"></footer>
+	</div>	
 	
 </body>
-
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/home_page.js"></script>
 </html>
