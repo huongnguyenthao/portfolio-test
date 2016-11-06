@@ -29,7 +29,7 @@ function load_gallery_templates() {
 
 	for (var i = 1; i <= 5; i++) {
 		var gallery_array = gallery_dictionary[String(i)];
-		var gallery_item = $("<div>", {"class": "gallery_item col-xs-12 col-sm-6"});
+		var gallery_item = $("<div>", {"class": "gallery_item col-xs-12 col-md-6"});
 		var image_container = $("<div>", {"class": "image_container"});
 		var img = $('<img id=i class="gallery_image">'); //Equivalent: $(document.createElement('img'))
 		img.attr('alt', gallery_array[0]);
