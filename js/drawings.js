@@ -1,15 +1,25 @@
-
-
-load_template().done(function(){
+load2().done(function(){
        //wait for done and the run the second
-       document.getElementById('page_title').innerHTML = "DRAWINGS";
-	load_gallery_templates();
+	document.getElementById('page_title').innerHTML = "DRAWINGS";
     });
+
+function load1() {
+	load_template().done(function(){
+       //wait for done and the run the second
+		$('#main_content').load('/templates/navigation.xhtml');
+    });
+}
+
+function load2() {
+	load1().done(function(){
+       //wait for done and the run the second
+		load_gallery_templates();
+    });
+}
 
 function load_template() {
 	$('#header').load('/templates/header.xhtml');
 	$('#footer').load('/templates/footer.xhtml');
-	$('#main_content').load('/templates/navigation.xhtml');
 	return $.ajax();
 }
 

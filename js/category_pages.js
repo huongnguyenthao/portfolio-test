@@ -1,8 +1,3 @@
-load_template().done(function(){
-       //wait for done and the run the second
-
-	load_gallery_templates();
-    });
 
 function load_template() {
 	$('#header').load('/templates/header.xhtml');
