@@ -16,9 +16,24 @@
 <body>
 	<div class="container">
 		<header id="header" class="row header_or_footer"></header>
+		<div id="title_row" class="row">
+			<h1 id="page_title" class="col-xs-10">DRAWINGS</h1>
+			<!-- Use any element to open the sidenav -->
+			<div onclick="openNav()" id="open_symbol_div" class="col-xs-2">
+				<img id="open_nav_symbol" src="/images/plus_dim.png" alt=" ">				
+			</div>
+		</div>
 		<div id="containing_div" class="row">
-			<h1 id="page_title" class="col-xs-11">DRAWINGS</h1>
-			<!-- <button><img src="/images/plus_small.png" alt="navigation icon"></button> -->
+			
+			<div id="mySidenav" class="sidenav">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  				<a href="#">About</a>
+  				<a href="#">Services</a>
+  				<a href="#">Clients</a>
+  				<a href="#">Contact</a>
+			</div>
+
+			
 
 		</div>
 		<footer id="footer" class="row header_or_footer"></footer>
