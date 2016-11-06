@@ -1,8 +1,6 @@
-
-
 load_template().done(function(){
        //wait for done and the run the second
-       document.getElementById('page_title').innerHTML = "DRAWINGS";
+
 	load_gallery_templates();
     });
 

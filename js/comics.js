@@ -2,7 +2,7 @@
 
 load_template().done(function(){
        //wait for done and the run the second
-       document.getElementById('page_title').innerHTML = "DRAWINGS";
+       document.getElementById('page_title').innerHTML = "COMICS";
 	load_gallery_templates();
     });
 
