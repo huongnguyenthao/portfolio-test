@@ -33,7 +33,7 @@ function load_gallery_templates() {
 		var gallery_array = gallery_dictionary[String(i)];
 		var gallery_item = $("<div>", {"class": "gallery_item col-xs-12 col-md-6 col-lg-4"});
 		var image_container = $("<div>", {"class": "image_container"});
-		var img = $('<img id=i class="gallery_image">'); //Equivalent: $(document.createElement('img'))
+		var img = $('<img class="gallery_image">'); //Equivalent: $(document.createElement('img'))
 		img.attr('alt', gallery_array[0]);
 		img.attr('src', gallery_array[2]);
 		img.appendTo(image_container);	
