@@ -41,11 +41,11 @@
 	color: rgb(235, 235, 235); 
 	margin-top: 25px;
 	margin-bottom: 25px;
-	font-size: 10vmin;
+	font-size: 50px;
 }
 
 #header {
-	/*padding-left: 5vmin;*/
+	padding-left: 2vmin;
 }
 
 /* The side navigation menu */
@@ -85,7 +85,19 @@
     font-size: 36px;
     margin-left: 50px;
 }
+/*
+a {
+	color: rgb(270, 270, 270); 
+}
 
+a:visited {
+	color: rgb(270, 270, 270); 	
+}
+
+a:link {
+	color: rgb(270, 270, 270); 
+}
+*/
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -107,4 +119,117 @@
 #open_nav_symbol {
 	height: 100%;
 	width: auto;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+	#open_nav_symbol {
+		display: none;
+		background: white;
+	}
+
+	#nav_thao_huong {
+		display: none;
+	}
+
+	#mySidenav {
+	    width: 100%; /* 100% Full-width */
+	    height: auto; /* 0 width - change this with JavaScript */
+	    position: static; /* Stay in place */
+	    z-index: auto;
+	    background-color: #323435; 
+	   	overflow-x: auto; /* Disable horizontal scroll */
+	   	padding: 0px;
+	   	margin-bottom: 16px;
+	}
+
+	/* The navigation menu links */
+	.sidenav a {
+	    text-decoration: none;
+	    font-size: 3vmin;
+	    color: #f1f1f1;
+	    display: inline-block;
+	    text-transform: uppercase;
+	    border-style: solid;
+    	border-width: 5px;
+    	border-color: #222425;
+    	padding: 1vh 1vw 1vh 1vw;
+    	text-align: center;
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover, .offcanvas a:focus{
+	    color: #f1f1f1;
+	}
+
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {
+	    display: none;
+	}
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+/*	#header {
+		background-color: #272930;
+		width: 250px;
+		position: fixed;
+		top: 0;
+		left: 36px;
+		height: 100%;
+	}
+
+	#homepage_link {
+		position: fixed;
+		bottom: auto;
+		top: 36px;
+		left: 32px;
+		font-size: 50px;
+	}
+
+	#description {
+		position: fixed;
+		top: 100px;
+		left: 32px;
+	}
+
+
+
+	*/
+/*	#mySidenav {
+	    height: 100%; 
+	    width: 250px;
+	    position: fixed; 
+	    top: 200px;
+	    left: 32px;
+	    background-color: rgba(0 0 0 0);
+	}
+
+	
+	.sidenav a {
+	    padding: 8px 8px 8px 32px;
+	    display: block;
+	    border: none;
+	}
+
+	#footer {
+		display: none;
+	}
+
+	#title_row {
+		width: 70vw;
+		position: absolute;
+		left: 33vw;
+	}
+
+	#containing_div {
+		width: 70vw;
+		position: absolute;
+		left: 33vw;
+		top: 100px;
+	}*/
+
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Paintings</title>
+	<title>Drawings</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/category_pages.css">
-	<script src="../js/jquery-3.1.1.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="/css/drawings.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>	
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -14,7 +15,27 @@
 <body>
 	<div class="container">
 		<header id="header" class="row header_or_footer"></header>
-		<div id="main_content"></div>
+		<div id="title_row" class="row">
+			<h1 id="page_title" class="col-xs-10">DRAWINGS</h1>
+			<!-- Use any element to open the sidenav -->
+			<div onclick="openNav()" id="open_symbol_div" class="col-xs-2">
+				<img id="open_nav_symbol" src="/images/plus_dim.png" alt=" ">				
+			</div>
+		</div>
+		<div id="containing_div" class="row container">
+			
+			<div id="mySidenav" class="sidenav row">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  				<a id="nav_thao_huong" class="col-xs-12 col-md-4 " href="/">Thao Huong</a>
+  				<a id="nav_code" class="col-xs-12 col-md-4" href="/category/code.html">Code</a>
+  				<a id="nav_interactive" class="col-xs-12 col-md-4" href="/category/interactive.html">Interactive</a>
+  				<a id="nav_drawings" class="col-xs-12 col-md-4" href="/category/drawings.html">Drawings</a>
+  				<a id="nav_comics" class="col-xs-12 col-md-4" href="/category/comics.html">Comics</a>
+  				<a id="nav_paintings" class="col-xs-12 col-md-4" href="/category/paintings.html">Paintings</a>
+  				<a id="nav_about" class="col-xs-12 col-md-4" href="/category/about.html">About Me</a>
+			</div>
+
+		</div>
 		<footer id="footer" class="row header_or_footer"></footer>
 	</div>	
 

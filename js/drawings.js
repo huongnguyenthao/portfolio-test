@@ -1,21 +1,9 @@
-load2().done(function(){
-       //wait for done and the run the second
-	document.getElementById('page_title').innerHTML = "DRAWINGS";
-    });
 
-function load1() {
-	load_template().done(function(){
-       //wait for done and the run the second
-		$('#main_content').load('/templates/navigation.xhtml');
-    });
-}
 
-function load2() {
-	load1().done(function(){
+load_template().done(function(){
        //wait for done and the run the second
-		load_gallery_templates();
+	load_gallery_templates();
     });
-}
 
 function load_template() {
 	$('#header').load('/templates/header.xhtml');
@@ -43,7 +31,7 @@ function load_gallery_templates() {
 
 	for (var i = 1; i <= 5; i++) {
 		var gallery_array = gallery_dictionary[String(i)];
-		var gallery_item = $("<div>", {"class": "gallery_item col-xs-12 col-md-6"});
+		var gallery_item = $("<div>", {"class": "gallery_item col-xs-12 col-md-6 col-lg-4"});
 		var image_container = $("<div>", {"class": "image_container"});
 		var img = $('<img id=i class="gallery_image">'); //Equivalent: $(document.createElement('img'))
 		img.attr('alt', gallery_array[0]);

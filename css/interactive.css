@@ -1,8 +1,9 @@
-#nav_drawings {
-	color: #FFFFFF;
+#nav_interactive {
+	color:#FFFFFF;
 }
+
 @media only screen and (min-width: 500px) {
-	#nav_drawings {
+	#nav_interactive {
 		color: #323435;
 		background: #f1f1f1;
 	}

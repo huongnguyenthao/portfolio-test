@@ -164,29 +164,10 @@ a:link {
 		padding: 25px 25px 0px 0px;
 	}
 
-
-	#code {
-		bottom: 70%;
-	}
-
-	#interactive {
-		bottom: 62.5%;
-	}
-
-	#drawings {
-		bottom: 50%;
-	}
-
-	#comics {
-		bottom: 38%;
-	}
-	#paintings {
-		bottom: 26%;
-	}
-	#about {
-		bottom:21%;
-	}
-
-
 }
 
+
+
+@media only screen and (min-width: 1000px) {
+	
+}
