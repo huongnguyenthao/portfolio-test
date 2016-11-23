@@ -20,7 +20,7 @@ function change_image() {
 	if (window.innerWidth < 500) {
 		image.src = 'images/background_image_vertical_editted.jpg';
 	} else if (window.innerWidth < 1000) {
-		image.src = 'images/background_image_tablet.jpg';
+		image.src = 'images/Background_image_tablet.jpg';
 	} else {
 		image.src = 'images/Background_image_horizontal.jpg';
 	}
